@@ -1,5 +1,4 @@
 # Resizing and Rescaling
-# for static video
 import cv2 as cv
 
 capture = cv.VideoCapture("Videos/dog.mp4")
