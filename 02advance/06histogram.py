@@ -9,15 +9,15 @@ cv.imshow("gray", gray)
 
 # grayscale histogram
 
-# gray_hist = cv.calcHist([gray],[0], None, [256], [0,256])
+gray_hist = cv.calcHist([gray],[0], None, [256], [0,256])
 
-# plt.figure()
-# plt.title("grayscale histogram")
-# plt.xlabel("bins")
-# plt.ylabel("No. of pixels")
-# plt.plot(gray_hist)
-# plt.xlim([0,256])
-# plt.show()
+plt.figure()
+plt.title("grayscale histogram")
+plt.xlabel("bins")
+plt.ylabel("No. of pixels")
+plt.plot(gray_hist)
+plt.xlim([0,256])
+plt.show()
 
 # color histogram
 plt.figure()
