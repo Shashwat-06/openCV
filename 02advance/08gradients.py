@@ -22,11 +22,9 @@ cv.imshow("sobel X", sobelx)
 cv.imshow("sobel Y", sobely)
 cv.imshow("combined", combined)
 
-
+# canny is a multi stage process and one of its stages is using sobel to copute gradiets of the image
 canny = cv.Canny(gray, 150, 175)
 cv.imshow("canny", canny)
-
-
 
 
 cv.waitKey(0)
